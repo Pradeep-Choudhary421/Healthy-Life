@@ -8,7 +8,7 @@ const Users = () => {
   const [allUser, setAllUser] = useState();
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
-  const url = "http://localhost:7082/admin/getAllUsers";
+  const url = "https://healthy-life-backend-5id9.onrender.com/admin/getAllUsers";
   const getAllUsers = async () => {
     try {
       dispatch(showLoading());

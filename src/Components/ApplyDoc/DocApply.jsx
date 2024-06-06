@@ -29,7 +29,7 @@ const DocApply = () => {
     // }
   });
 
-  const url = "http://localhost:7082/api/applyDoctor";
+  const url = "https://healthy-life-backend-5id9.onrender.com/api/applyDoctor";
   const dispatch = useDispatch();
 
   const onApply = async () => {

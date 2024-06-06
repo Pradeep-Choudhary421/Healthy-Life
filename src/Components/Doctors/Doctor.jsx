@@ -9,7 +9,7 @@ const Doctor = () => {
     const [allDoctors, setAllDoctors] = useState();
     const dispatch = useDispatch();
     const {user} = useSelector((state)=>state.user)
-  const url = "http://localhost:7082/admin/getAllDoctors";
+  const url = "https://healthy-life-backend-5id9.onrender.com/admin/getAllDoctors";
     const getAllUsers = async () =>{
         try {
             dispatch(showLoading());
@@ -31,7 +31,7 @@ const Doctor = () => {
     }
     const approveRequest = async (doctor, status) =>{
         try{
-            await axios.post("http://localhost:7082/admin/changeAccountStatus",
+            await axios.post("https://healthy-life-backend-5id9.onrender.com/admin/changeAccountStatus",
                 { doctorId : doctor._id, userId:doctor.userId, status:status},
                 {
                     headers: {

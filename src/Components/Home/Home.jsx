@@ -7,7 +7,7 @@ const Home = () => {
   const getUserData = async () =>{
     try{
       const res = await axios.post(
-        "http://localhost:7082/api/getUser",{},{
+        "https://healthy-life-backend-5id9.onrender.com/api/getUser",{},{
           headers:{
             Authorization: "Bearer"+localStorage.getItem("token")
           }

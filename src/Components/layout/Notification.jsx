@@ -21,7 +21,7 @@ const Notification = () => {
     try {
       dispatch(showLoading());
       await axios.post(
-        'http://localhost:7082/api/getAllNotification',
+        'https://healthy-life-backend-5id9.onrender.com/api/getAllNotification',
         { userId: user._id },
         {
           headers: {
@@ -40,7 +40,7 @@ const Notification = () => {
   const handleDelete = () =>{
     dispatch(showLoading());
     try{
-      axios.post('http://localhost:7082/api/deleteNotification',{
+      axios.post('https://healthy-life-backend-5id9.onrender.com/api/deleteNotification',{
         userId: user._id
       },{
         headers: {

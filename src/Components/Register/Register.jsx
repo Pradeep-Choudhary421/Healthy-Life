@@ -11,7 +11,7 @@ const Register = () => {
     password: "",
   });
 
-  const url = "http://localhost:7082/api/register";
+  const url = "https://healthy-life-backend-5id9.onrender.com/api/register";
 
   const navigate = useNavigate();
 

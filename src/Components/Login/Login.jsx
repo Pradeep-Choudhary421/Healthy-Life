@@ -13,7 +13,7 @@ const Login = () => {
     email: "",
     password: "",
   });
-  const url = "http://localhost:7082/api/login";
+  const url = "https://healthy-life-backend-5id9.onrender.com/api/login";
   const login = async () => {
     dispatch(showLoading());
     await axios
