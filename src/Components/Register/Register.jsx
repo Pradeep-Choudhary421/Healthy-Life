@@ -24,7 +24,7 @@ const Register = () => {
           email: "",
           password: "",
         });
-        navigate("/login");
+        navigate("/");
         toast.success("Account created successfully!");
       })
       .catch((err) => {
